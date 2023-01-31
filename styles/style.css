@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 0px;
+    outline: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+:root{
+    --black: black;
+    --white: white;
+}
+
+body{
+    background: url(../sources/background.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px;
+    background-color: black;
+}
+
+header{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0));
+    display: flex;
+    grid-row: 1;
+    grid-column: 1/4;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    height: 80px;
+}
+
+img#logo{
+    margin-left: 20px;
+    display: block;
+    width: 100px;
+}
+
+#iconMenu{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(46, 46, 46);
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+#iconMenu:hover{
+    background-color: var(--black);
+}
+
+#nav{
+    grid-row: 2;
+    grid-column: 1/4;
+    display: none;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 139.3px);
+    grid-column: 2;
+}
+
+.container{
+    margin: 0 auto ;
+    grid-row: 2;
+    width: 80vw;
+}
+
+.text-container{
+    display: block;
+    text-align: center;
+}
+
+.text-container h1{
+    color: white;
+    font-size: 2.1rem;
+    text-align: center;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.600);
+}
+
+.text-container h2{
+    color: white;
+    padding: 30px;
+    font-size: 1.3rem;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.600);
+}
+
+.button-container{
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    background-color: rgb(255, 255, 0);
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 200px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(93, 93, 93);
+    color: white;
+}
