@@ -1,12 +1,16 @@
 @charset "UTF-8";
 
 @media only screen and (min-width: 768px) {
+    body{
+        width: 95vw;
+    }
+    
     #logo{
         margin-left: 20px;
         display: block;
         width: 130px;
     }
-    
+
     #menu{
         display: none;
     }
