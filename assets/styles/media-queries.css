@@ -1,10 +1,6 @@
 @charset "UTF-8";
 
 @media only screen and (min-width: 768px) {
-    body{
-        width: 95vw;
-    }
-    
     #logo{
         margin-left: 20px;
         display: block;
@@ -40,7 +36,11 @@
     #menu-item:hover{
         background-color: black;
     }
-    
+
+    .container{
+        width: 500px;
+        align-content: center;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -79,8 +79,52 @@
     #menu-item:hover{
         background-color: black;
     }
+
+    .container{
+        width: 550px;
+        align-content: center;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
+    #logo{
+        margin-left: 20px;
+        display: block;
+        width: 130px;
+    }
+    
+    #menu{
+        display: none;
+    }
+    
+    #nav{
+        display: block !important;
+    }
+    
+    #menu-list{
+        display: flex;
+        position: relative;
+        top: -80px;
+        flex-direction: row;
+        justify-content: end;    
+        gap: 40px;
+        padding: 10px;
+        margin-right: 20px;
+    }
+    
+    #menu-item{
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+        font-size: 1.4rem;
+    }
+    
+    #menu-item:hover{
+        background-color: black;
+    }
 
+    .container{
+        width: 600px;
+        align-content: center;
+    }
 }
